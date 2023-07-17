@@ -1,6 +1,6 @@
 # Asus-ChromeBox-i7-8550U
 
-Model：wAsus Chromebox 3  CN65 （Teemo）
+Model：Asus Chromebox 3  CN65 （Teemo）
 
 FW：MrChromebox-4.20.0 05/15/2023 （Coreboot BIOS）
 
