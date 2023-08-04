@@ -110,21 +110,21 @@
 				<key>AAPL,ig-platform-id</key>
 				<data>AAAWWQ==</data>
 				<key>AAPL00,override-no-connect</key>
-				<data>AP///////wAl4///AAAAAAcgAQOAPyR4Lta1rFFGniUOUFSlSwDRwLMAAQGBgAEBgcCBQKnACOgAMPJwWoCwWEoAeGghAAAaAAAA/QAwSyiEPAAKICAgICAgAAAA/AAyOEQxVQAgICAgICAgAAAA/wAwMDAwMDAwMDAwMDAwAfICAzPyTGFgXwSQERITHwECAyMJfweDAQAAagMMABAAOEIgAABn2F3EAXiAA+MF4wHiDwECOoAYcTgtQFgsRQBVUCEAAB5qXgCgoKApUDAgNQBVUCEAABoEdAAw8nBagLBYigBVUCEAABoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlQ==</data>
+				<data>AP///////wBKixobAAAAACseAQSFAAB4/mQ1pVRPnicSUFQhCADRwKnAgcABAQEBAQEBAQEBcucAoPBgRZAwIDUAYWMhAAAaP9AAoPBwPoAwIDUAYWMhAAAaAAAA/ABSVEsgVUhEIEhEUgogAAAA/QAoPR6HPAAKICAgICAgAdICAz/xUQRMXV5fYGEAAAAAAGdoaWpr4wXAACMJfweDAQAA5Q8AAAwAZwMMABAAOHhn2F3EAXiIAeYGBQFpaU8COoAYcTgtQFgsRQBhYyEAAB5WXgCgoKApUDAgNQBhYyEAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbg==</data>
 				<key>device-id</key>
 				<data>FlkAAA==</data>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
 				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-type</key>
 				<data>AAgAAA==</data>
 				<key>framebuffer-fbmem</key>
-				<data>AAAAAw==</data>
+				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
 				<key>framebuffer-unifiedmem</key>
-				<data>AAAAwA==</data>
+				<data>AAAAgA==</data>
 				<key>model</key>
 				<string>Intel HD Graphics 620</string>
 			</dict>
@@ -151,6 +151,24 @@
 				<key>model</key>
 				<string>Sunrise Point-LP HD Audio</string>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x3)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,28,3/0,0</string>
+				<key>device_type</key>
+				<string>Network controller</string>
+				<key>model</key>
+				<string>BCM4360 802.11ac Wireless Network Adapter</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,28,0/0,0</string>
+				<key>device_type</key>
+				<string>Ethernet controller</string>
+				<key>model</key>
+				<string>RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller</string>
+			</dict>
 		</dict>
 		<key>Delete</key>
 		<dict/>
@@ -170,6 +188,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/Lilu</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>FakePCIID.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/FakePCIID</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -370,7 +406,7 @@
 			<key>AppleXcpmForceBoost</key>
 			<false/>
 			<key>CustomSMBIOSGuid</key>
-			<false/>
+			<true/>
 			<key>CustomPciSerialDevice</key>
 			<false/>
 			<key>DisableIoMapper</key>
@@ -433,7 +469,7 @@
 			<key>HibernateSkipsPicker</key>
 			<false/>
 			<key>HideAuxiliary</key>
-			<true/>
+			<false/>
 			<key>LauncherOption</key>
 			<string>Disabled</string>
 			<key>LauncherPath</key>
@@ -479,7 +515,7 @@
 		<key>Security</key>
 		<dict>
 			<key>AllowSetDefault</key>
-			<false/>
+			<true/>
 			<key>ApECID</key>
 			<integer>0</integer>
 			<key>AuthRestart</key>
@@ -654,7 +690,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-igfxnotelemetryload -igfxdvmt -igfxhdmidivs -igfxmlr -igfxmpc -igfxtypec -igfxfw=2 igfxmetal=1 igfxonln=1</string>
+				<string>-igfxnotelemetryload igfxonln=1</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -725,21 +761,21 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C07816310J9KXPG8C</string>
+			<string>C078164034NKXPGJA</string>
 			<key>ProcessorType</key>
 			<integer>1801</integer>
 			<key>ROM</key>
 			<data>ESIzRFVm</data>
 			<key>SpoofVendor</key>
-			<true/>
+			<false/>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
 			<string>Macmini8,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C07WLVZ6JYVX</string>
+			<string>C07WLBZUJYVX</string>
 			<key>SystemUUID</key>
-			<string>D191900E-3207-469B-8E3B-EBE752465FD4</string>
+			<string>3D0E9825-5159-41FE-87FA-6FF7E50C0374</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -748,7 +784,7 @@
 		<key>UpdateSMBIOS</key>
 		<true/>
 		<key>UpdateSMBIOSMode</key>
-		<string>Create</string>
+		<string>Custom</string>
 		<key>UseRawUuidEncoding</key>
 		<false/>
 	</dict>
@@ -893,7 +929,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>LoadEarly</key>
 				<false/>
 				<key>Path</key>
@@ -905,7 +941,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>LoadEarly</key>
 				<false/>
 				<key>Path</key>
